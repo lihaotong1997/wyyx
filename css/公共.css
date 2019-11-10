@@ -1,0 +1,289 @@
+*{
+    margin: 0; padding: 0;list-style: none;
+}
+.contin{
+    width: 100%;
+    height: 100%;
+}
+.q{
+    width: 100%;
+    height: 100%;
+    background: rgb(245, 245, 245);
+}
+.q1{
+    width: 1090px;
+    height:12px;
+   
+    font-size: 12px;
+    color: #333;
+    line-height: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+.q1 span:nth-child(2){
+    font-size: 15px;
+    color: silver;
+}
+.q1 span:nth-child(3){
+    font-size: 12px;
+    color: #999;
+}
+.q2{
+    width: 1090px;
+    height: 310px;
+   
+    background: silver;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.center{
+    width: 1090px;
+    background: white;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+    margin-bottom: 80px;
+    
+}
+.q3{
+    width: 100%;
+ 
+    margin-top: 10px;
+    font-size: 12px;
+    color: #333;
+    border-bottom: 1px solid #eaeaea;
+    
+}
+.q4{
+    width: 100%;
+    height: 94px;
+ 
+    padding-top: 20px; 
+}
+.q5{
+    width: 100%;
+    height: 34px;
+    padding-top: 20px;
+    border-top: 1px dashed #dedede;
+  
+}
+.q6{
+    width: 100%;
+    height: 14px;
+    border-top: 1px dashed #dedede;
+  
+    padding: 20px 0;
+}
+.q7{
+    font-size: 14px;
+    color: #999;
+    float: left;
+    margin-right: 28px;
+}
+.q8{
+    width: 930px;
+  
+    float: left;
+    margin-bottom: 4px;
+   
+}
+.q6 span{
+    margin-right: 30px;;
+}
+.w{
+    width: 100%;
+    height:100%;
+   
+}
+.w1{
+    width: 100%;
+    padding-top:30px;
+ 
+    
+}
+.w2{
+    width: 100%;
+    height: 76px;
+   
+    text-align: center;
+    margin-bottom: 40px;
+}
+.w2 p:nth-child(1){
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 44px;
+}
+.w2 p:nth-child(2){
+    font-size: 14px;
+    color: #999;
+    line-height: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.w3{
+    width: 1020px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}
+
+.u2{
+    width: 245px;
+    height: 381px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;;
+   
+}
+.w6{
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    z-index: 10;
+}
+.ww{
+    width: 100%;
+    height: 265px;
+    background: #f4f4f4;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+
+.w4{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    padding-left: 90px;
+    box-sizing: border-box;
+    background:url(../img/5e5ba7f9c3805cc8085368ed41aaff65.png);
+    position: absolute;
+    bottom: 0;
+}
+.w5{
+    width: 60px;
+    height: 36px;
+    padding-left: 8px;
+    padding-right: 14px;
+    border-top-left-radius: 3px;
+   
+    background: url(../img/ced6f7cfbd566e260ea67ec486cb9b60.png);
+    background-position: right;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+   
+}
+.w5 span:nth-child(1){
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin-top: 3px;;
+}
+.w5 span:nth-child(2){
+
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    float: left;
+   width: 100%;
+}
+.w7{
+    width: 100%;
+    height: 71px;
+   
+}
+.w7 span:nth-child(1){
+    display: block;
+    width: 48px;
+    height: 20px;
+  
+   margin: 0 auto;
+    background-color: #e36844;
+    line-height: 20px;
+    color: #fff!important;
+    font-size: 12px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 3px;
+}
+.w7 span:nth-child(2){
+    display: block;
+    color: #333;
+    line-height: 20px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 700;
+   
+
+}
+.w7 span:nth-child(3){
+    display: block;
+   width: 100%;
+   text-align: center;
+
+}
+.w8{
+    line-height: 13px;
+    height: 13px;
+    display: inline-block;
+    color: #d4282d;
+    font: 13px/1.5 "Microsoft Yahei","微软雅黑",verdana;
+}
+.w9{
+    display: inline-block;
+    line-height: 13px;
+    height: 13px;
+    font: 12px/1.5 "Microsoft Yahei","微软雅黑",verdana;
+    color: #999;
+    margin-left: 5px;;
+}
+.sr,.srr{
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+.spp{
+    position: absolute;
+    top: 0px;
+    display: none;
+}
+
+.u2:hover .spp{
+    display: block;
+}
+
+.u2:hover{
+    background:rgb(244, 240, 233);
+    box-shadow: 0px 0px 7px 0px silver;
+}

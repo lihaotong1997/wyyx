@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/公共.css">
+  <script src="./js/jquery-3.2.1.min.js"></script>
+
+  <script src="swiper-5.0.4/package/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="./swiper-5.0.4/package/css/swiper.min.css">
+
+
+  <style>
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contain">
+
+    <div id="tou"></div>
+
+    <div class="q">
+
+
+      <div class="q1">
+
+      </div>
+      <!--  -->
+
+
+      <div class="q2">
+
+
+
+
+
+        <div class="swiper-container swiper1">
+          <div class="swiper-wrapper mf">
+
+
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-white"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next swiper-button-white"></div>
+          <div class="swiper-button-prev swiper-button-white" style="width: 30px; height: 30px;"></div>
+        </div>
+
+
+
+
+
+
+
+      </div>
+      <!--  -->
+
+      <div class="center">
+
+        <div class="q3">
+          <div class="q4">
+            <span class="q7">分类:</span>
+
+
+
+            <div class="q8">
+              <span class="srr" style="color: #b4a078;">全部</span>
+            </div>
+
+
+          </div>
+
+          <div class="q5">
+            <span style="margin-right: 0;" class="q7">配送地区:</span>
+            <div class="q8">
+              <span class="sr" style="color: #b4a078;">全部</span>
+              <span class="sr">香港</span>
+              <span class="sr">澳门</span>
+              <span class="sr">台湾</span>
+              <span class="sr">日韩</span>
+              <span class="sr">欧洲</span>
+              <span class="sr">美洲</span>
+
+
+
+            </div>
+          </div>
+
+          <div class="q6">
+            <span class="q7">排序:</span>
+            <span style="color: #b4a078;">默认</span>
+            <span>价格</span>
+            <span>上架时间</span>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="w">
+
+        </div>
+
+        <!--  -->
+
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div id="wei"></div>
+
+    <div id="ce"></div>
+
+
+
+  </div>
+
+
+</body>
+
+<script>
+
+
+
+
+
+
+  var sum = window.location.search.substring(1)
+  console.log(sum)
+
+  $.get("1.json", function (str) {
+
+    console.log(str)
+    var sp = str[6].list[sum];
+
+
+
+    $(`
+    
+    <span>首页</span>
+    <span>></span>
+    <span>${sp.name1}</span>
+    
+    `).appendTo($(".q1"))
+
+
+
+    console.log(sp)
+    var lbt = sp.list5;
+    console.log(lbt)
+    $.each(lbt, function (s) {
+
+      $(`
+       <div class="swiper-slide" ><img src="${lbt[s].tu}" alt=""></div>
+       `).appendTo($(".mf"))
+
+    })
+
+
+
+    /*  $(`
+      
+      <div class="swiper-slide" ><img src="${sp.tu}" alt=""></div>
+      <div class="swiper-slide" ><img src="${sp.tu1}" alt=""></div>
+      <div class="swiper-slide" ><img src="${sp.tu2}" alt=""></div>
+      <div class="swiper-slide" ><img src="${sp.tu3}" alt=""></div>
+      
+      `).appendTo($(".mf"))
+  */
+
+    var ssr = sp.list2;
+
+
+    $.each(ssr, function (x) {
+
+      $(`
+        
+        <span class="sr">${ssr[x].mf}</span>
+
+        `).appendTo($(".q8").eq(0))
+
+
+      $(`
+        
+      
+
+         <div class="w1">
+        <div class="w2">
+        <p>${ssr[x].mf}</p>
+        <p>${ssr[x].xj}</p>
+        </div>
+
+        <div class="w3">
+    
+      
+       
+        </div>    
+        </div>
+       
+        
+        `).appendTo($(".w"))
+
+      var ds = ssr[x].list3;
+
+      $.each(ds, function (i) {
+
+        $(`
+        
+        <div class="u2">
+                                        <div class="w6">
+                                          <img class="img" src="${ds[i].img1}" alt="">
+                                        </div>
+                                        <div class="ww">
+                                                <img class="sp" src="${ds[i].img}" alt="">
+                                          <img class="spp" src="${ds[i].img2}" alt="" >
+                                          
+                                          <div class="w4">${ds[i].p2}</div>
+                                          <div class="w5">
+                                            <span>${ds[i].p}</span>
+                                            <span>${ds[i].p1}</span>
+                                          </div>
+                                  
+                                         
+                                  
+                                        </div>
+                                        <div class="w7">
+                                          <span>${ds[i].p3}</span>
+                                          <span>${ds[i].p6}</span>
+                                          <span><i class="w8">${ds[i].p4}</i><i class="w9">${ds[i].p5}</i></span>
+                                        </div>
+                                  
+                                      </div>
+
+        `
+        ).appendTo($(".w3").eq(x))
+      })
+    })
+    var swiper1 = new Swiper('.swiper1', {
+      spaceBetween: 30,
+      effect: 'fade',
+      autoplay: {
+        delay: 3000
+      },
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  })
+
+  $(".q4").delegate(".sr", "click", function () {
+    var index = $(this).index(".sr");
+    console.log(index);
+    $(".w1").eq(index).css("display", "block").siblings().css("display", "none")
+    $(".w1").eq(index).children(".w2").css("display", "none")
+
+  })
+  $(".srr").click(function () {
+    $(".w1").css("display", "block")
+  })
+  $("#tou").load("头部.html")
+  $("#wei").load("footer.html")
+  $("#ce").load("cebianlan.html")
+</script>
+
+</html>
